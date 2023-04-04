@@ -1,4 +1,6 @@
 import requests
+import json
+
 
 cookies = {
     'cud': 'F2/It2QpuGdUJJi1A4TOAg==',
@@ -44,3 +46,12 @@ data = {
 }
 
 response = requests.post('https://ad.betcity.ru/d/off/events', params=params, cookies=cookies, headers=headers, data=data)
+jsonobj = json.loads(response.text)
+
+matchlist = []
+#for i in (jsonobj['reply']['sports']['1']['chmps']['0']):
+#    print(i)
+
+
+print(list(jsonobj['reply']['sports']['1']['chmps'])[0])
+#print(response.text)
