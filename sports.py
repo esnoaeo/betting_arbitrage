@@ -51,4 +51,5 @@ def get_sports():
     sportlist = []
     for i in (jsonobj['reply']['sports']['1']['chmps']):
         sportlist.append(i)
+
     return sportlist
