@@ -1,27 +1,28 @@
 import requests
 
 cookies = {
-    'cud': 'F2/It2QpuGdUJJi1A4TOAg==',
-    '_ym_uid': '1680455784871448492',
-    '_ym_d': '1680455784',
+    'cud': 'WNTqCWQqxxNzynVCAx7yAg==',
+    '_ym_uid': '1680525080918348442',
+    '_ym_d': '1680525080',
     '__zzatgib-w-betcity': 'MDA0dBA=Fz2+aQ==',
     'xq_icm': '10000',
-    '_gid': 'GA1.2.1249358151.1680544462',
+    '_gid': 'GA1.2.513693867.1680699026',
     '_ym_isad': '1',
-    '_ga': 'GA1.1.2109130920.1680455784',
-    '_gat': '1',
-    'cfidsgib-w-betcity': 'x2FZKkF01gr005HTfhSliUhM60mwGQBnzBVa4HrAYAE2sNRAhJaNaeRoNP3hmDoARzjPmNMUyKk7VgX2HAV8THIeQ1u0vxQJ3g9RnXa2HkfdJnu8TM3QCSg8iO9F4/B+lCFQ/A8h8AtpW51xpiCHIWs6moWKYSzHisg+Cg==',
-    'gsscgib-w-betcity': '64n5PSYdV5hXmauDlzRpcnDIjD+2vXqlzQNPzNiNUlDnSCDIv3odwscZdGcX7qUw8wDPb2wjA8DGyB8rd2/L8x1m2b0Imm2G8PahbU8FQFbI7bl0Y24pyOmeAmQ6Sf+FSSobMrymZDrDvGzRMIbtEXKNkZNWiiXTXGXreUqbmaSwBtqm7l6+LpGVogED2MewsNH47CNBlpqa5MeO1IYyaWwnV29G1xT72qKXFRvPvfmwtggxD4Z991K4+aLwlTd+UoNl0pr8Dup7x/ypUDuGwlArfgrR6uuMHijDP+fhoI7d',
-    'fgsscgib-w-betcity': 'gvQi491ce6dfffc7d4978ed98214e3da420b41a5',
-    '_ga_WQEG57XEGJ': 'GS1.1.1680544089.2.1.1680545507.48.0.0',
+    'gsscgib-w-betcity': 'PrcZHdon+MKMxhg6/3uqwE4Wlj7xgpI8CKgGegVwiR4WTUxrKTDkTJsHjxu3hVu0R741hnbXEEK1e9LB2gC5SGRNtHaaU3mMiyIchkJw4ATEX4QObUOoniTXncaXoTj13C4LwR7yopx4LB1cDhV2NU1k2jpcJbUyYSmMlIRQ7OSLcA/zaTJXV6eyV+at32b5ZYW0Ehpo7oY8ND3qZFOuGaos70bRg4n/irXsYapbw5d6fhKsvDFJ7bga3k9RiAkehM4=',
+    'fgsscgib-w-betcity': '0jiW1011dc343abe73254c9cd2c059104df552e7',
+    '_ga_WQEG57XEGJ': 'GS1.1.1680702345.8.0.1680702345.60.0.0',
+    '_ga': 'GA1.2.1484943170.1680525077',
+    '_gat_UA-93476422-9': '1',
+    'cfidsgib-w-betcity': 'c4lUMNFik3re1RdGx6mGcDx84fjTF5di71AJkHGMPi052DrJlgwDYC3Y1ovdFLJaHBfoiR6b5xHJV6HltHcSoLNEyUFq7DqiXbStk+/NWA4jmdyqPBDAchZRs0oYWdbej853KyfLj8pGpfAtuE1crYrPcsNZahKEJluQMmE=',
 }
 
 headers = {
     'authority': 'ad.betcity.ru',
     'accept': 'application/json, text/plain, */*',
     'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'content-type': 'application/x-www-form-urlencoded',
     # Requests sorts cookies= alphabetically
-    # 'cookie': 'cud=F2/It2QpuGdUJJi1A4TOAg==; _ym_uid=1680455784871448492; _ym_d=1680455784; __zzatgib-w-betcity=MDA0dBA=Fz2+aQ==; xq_icm=10000; _gid=GA1.2.1249358151.1680544462; _ym_isad=1; _ga=GA1.1.2109130920.1680455784; _gat=1; cfidsgib-w-betcity=x2FZKkF01gr005HTfhSliUhM60mwGQBnzBVa4HrAYAE2sNRAhJaNaeRoNP3hmDoARzjPmNMUyKk7VgX2HAV8THIeQ1u0vxQJ3g9RnXa2HkfdJnu8TM3QCSg8iO9F4/B+lCFQ/A8h8AtpW51xpiCHIWs6moWKYSzHisg+Cg==; gsscgib-w-betcity=64n5PSYdV5hXmauDlzRpcnDIjD+2vXqlzQNPzNiNUlDnSCDIv3odwscZdGcX7qUw8wDPb2wjA8DGyB8rd2/L8x1m2b0Imm2G8PahbU8FQFbI7bl0Y24pyOmeAmQ6Sf+FSSobMrymZDrDvGzRMIbtEXKNkZNWiiXTXGXreUqbmaSwBtqm7l6+LpGVogED2MewsNH47CNBlpqa5MeO1IYyaWwnV29G1xT72qKXFRvPvfmwtggxD4Z991K4+aLwlTd+UoNl0pr8Dup7x/ypUDuGwlArfgrR6uuMHijDP+fhoI7d; fgsscgib-w-betcity=gvQi491ce6dfffc7d4978ed98214e3da420b41a5; _ga_WQEG57XEGJ=GS1.1.1680544089.2.1.1680545507.48.0.0',
+    # 'cookie': 'cud=WNTqCWQqxxNzynVCAx7yAg==; _ym_uid=1680525080918348442; _ym_d=1680525080; __zzatgib-w-betcity=MDA0dBA=Fz2+aQ==; xq_icm=10000; _gid=GA1.2.513693867.1680699026; _ym_isad=1; gsscgib-w-betcity=PrcZHdon+MKMxhg6/3uqwE4Wlj7xgpI8CKgGegVwiR4WTUxrKTDkTJsHjxu3hVu0R741hnbXEEK1e9LB2gC5SGRNtHaaU3mMiyIchkJw4ATEX4QObUOoniTXncaXoTj13C4LwR7yopx4LB1cDhV2NU1k2jpcJbUyYSmMlIRQ7OSLcA/zaTJXV6eyV+at32b5ZYW0Ehpo7oY8ND3qZFOuGaos70bRg4n/irXsYapbw5d6fhKsvDFJ7bga3k9RiAkehM4=; fgsscgib-w-betcity=0jiW1011dc343abe73254c9cd2c059104df552e7; _ga_WQEG57XEGJ=GS1.1.1680702345.8.0.1680702345.60.0.0; _ga=GA1.2.1484943170.1680525077; _gat_UA-93476422-9=1; cfidsgib-w-betcity=c4lUMNFik3re1RdGx6mGcDx84fjTF5di71AJkHGMPi052DrJlgwDYC3Y1ovdFLJaHBfoiR6b5xHJV6HltHcSoLNEyUFq7DqiXbStk+/NWA4jmdyqPBDAchZRs0oYWdbej853KyfLj8pGpfAtuE1crYrPcsNZahKEJluQMmE=',
     'origin': 'https://betcity.ru',
     'referer': 'https://betcity.ru/',
     'sec-ch-ua': '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
@@ -34,15 +35,10 @@ headers = {
 }
 
 params = {
-    'rev': '6',
+    'rev': '3',
+    'ids': '11184843',
     'ver': '316',
     'csn': 'ooca9s',
 }
 
-data = {
-    'ids': '445',
-}
-
-response = requests.post('https://ad.betcity.ru/d/off/events', params=params, cookies=cookies, headers=headers, data=data)
-
-print(response.text)
+response = requests.get('https://ad.betcity.ru/d/off/ext', params=params, cookies=cookies, headers=headers)
